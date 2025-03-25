@@ -13,14 +13,15 @@ https://www.ceneo.pl/126710499
 ## Analyse the structure of the web page
 |Component|Selector|Variable|
 |---------|--------|--------|
-|opinion ID |[data-entry-id]||
-|opinion’s author |.user-post__author-name||
-|author’s recommendation |.user-post__author-recomendation > em||
-|score expressed in number of stars |.user-post__score-count||
-|opinion’s content |.user-post__score-count||
-|list of product advantages |.review-feature__item review-feature__item--positive||
-|list of product disadvantages |.review-feature__item review-feature__item--negative||
-|how many users think that opinion was helpful |button.votes-yes > span||
-|how many users think that opinion was unhelpful |button.votes-no > span||
-|publishing date |span.user-post__published >time:nth-child(1)[datetime]|
-|purchase date |span.user-post__published >time:nth-child(2)[datetime]||
+|opinion|div.js_product-review|opinion|
+|opinion ID |[data-entry-id]|opinion_id|
+|author |span.user-post__author-name|author|
+|recommendation |span.user-post__author-recomendation > em|recommendation|
+|number of stars |span.user-post__score-count|stars|
+|opinion’s content |div.user-post_text|content|
+|list of advantages |div.review-feature__item review-feature__item--positive|pros|
+|list of disadvantages |.review-feature__item review-feature__item--negative|cons|
+|how many helpful |button.vote-yes[data-total-vote]|vote_yes|
+|how many  unhelpful |button.vote-no[data-total-vote]|vote_no|
+|publishing date |span.user-post__published > time:nth-child(1)[datetime]|published|
+|purchase date |span.user-post__published > time:nth-child(2)[datetime]|purchased|
