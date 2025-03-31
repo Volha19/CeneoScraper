@@ -13,7 +13,7 @@ https://www.ceneo.pl/126710499
 ## Analyse the structure of the web page
 |Component|Selector|Variable|
 |---------|--------|--------|
-|opinion|div.js_product-review|opinion|
+|opinion|div.js_product-review:not(.user-post--highlight)|opinion|
 |opinion ID |[data-entry-id]|opinion_id|
 |author |span.user-post__author-name|author|
 |recommendation |span.user-post__author-recomendation > em|recommendation|
